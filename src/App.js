@@ -56,6 +56,14 @@ const [data, setData] = useState({
     })
   }
 
+  const imgData = {
+    className: 'aa',
+    style: {
+      width: 200,
+      height: 200
+    }
+  }
+
   // 只能return 一个根元素
   return (
     <>
@@ -63,6 +71,24 @@ const [data, setData] = useState({
         <button onClick={handleClick}>按钮</button>
         <div title={data.title}>{data.content}</div>
         <button onClick={handleClick2}>按钮</button>
+        {/* <div>
+          <img
+            alt=''
+            src={logo} 
+            className='aa'
+            style={{
+              width: 200,
+              height: 200
+            }}
+          />
+        </div> */}
+        <div>
+          <img
+            src = {logo}
+            alt=''
+            {...imgData}
+          />
+        </div>
     </>
     // <ul>{ulList}</ul>
     // <div title={divTitle}>{divContent}</div>
