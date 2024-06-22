@@ -8,7 +8,7 @@ const Button = memo(function Button({ onClick }) {
 
 function App() {
   const [count, setCount] = useState(0);
-  function handleUpdate() { 
+  function handleUpdate() {
     setCount(count + 1);
   }
 
